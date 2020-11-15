@@ -9,22 +9,38 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>home</title>
+    <script src="home.js"></script>
 </head>
 
 <body>
-    <header class="d-flex justify-content-between align-items-center fixed-top" id="header">
+    <header class="d-flex justify-content-between align-items-stretch fixed-top" id="header">
         <div class="d-flex justify-content-between align-items-center">
-            <a class="nav-link" id="enter-button-top" href="register.html">ورود</a>
-            <form>
-                <input type="text" class="form-control" placeholder="نوار جستجو" />
-            </form>
+            <div id="sidenav-button" class="" onclick="change_sidebar()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <a class="btn btn-primary" id="register-button-top" href="register.html">ثبت نام</a>
+            <a class="nav-link btn btn-outline-primary" id="enter-button-top" href="register.html">ورود</a>
         </div>
         <div class="d-flex justify-content-between align-items-center">
-            <a class="nav-link" id="datas-button-top" href="datas.html">داده ها</a>
-            <a class="nav-link" id="home-button-top" href="home.html">خانه</a>
+            <a class="nav-link d-flex align-items-center" id="datas-button-top" href="datas.html">داده ها</a>
+            <a class="nav-link d-flex align-items-center" id="home-button-top" href="home.html">خانه</a>
             <img class="navbar-brand" id="logoimg" src="assets/blue_logo_200x200.png" />
         </div>
     </header>
+
+    <div class="" id="sidebar">
+        <h4>اعضای تیم</h4>
+        <ol dir="rtl">
+            <li>
+                مجید
+            </li>
+            <li>
+                متین
+            </li>
+        </ol>
+    </div>
 
     <main id="main">
         <div class="cards-section" id="card-section">
@@ -84,7 +100,7 @@
                 </div>
             </div>
             <div class="card-container">
-               <div class="card">
+                <div class="card">
                     card
                 </div>
             </div>
@@ -109,22 +125,13 @@
                 </div>
             </div>
 
-        </div>
-
-        <div class="" id="sidebar">
-            <h4>اعضای تیم</h4>
-            <ol dir="rtl">
-                <li>
-                    مجید
-                </li>
-                <li>
-                    متین
-                </li>
-            </ol>
         </div>
     </main>
 
+
+
     <footer class="page-footer fixed-bottom justify-content-around" id="footer">
+        <a class="nav-link" href="register.html" id="register-button-bottom">ثبت نام</a>
         <a class="nav-link" href="datas.html" id="datas-button-bottom">داده ها</a>
         <a class="nav-link" href="home.html" id="home-button-bottom">خانه</a>
         <a class="nav-link" href="register.html" id="enter-button-bottom">ورود</a>
