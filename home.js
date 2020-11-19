@@ -7,7 +7,7 @@ function change_sidebar() {
         sidebar_opened = false
     }
     else {
-        document.getElementById("sidebar").style.width = "250px";
+        document.getElementById("sidebar").style.width = "300px";
         sidebar_opened = true
     }
 }
