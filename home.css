@@ -18,7 +18,7 @@ body{
 #header {
     width: 100%;
     height: 10%;
-    box-shadow: 0 2px 1px 0px gray;
+    box-shadow: 0 0 15px 0px rgba(0,0,0,0.5);
     background-color: #E8EFF7;
 }
 
@@ -142,7 +142,7 @@ header div > * {
 #footer{
     display: none;
     background-color: #E8EFF7;
-    box-shadow: 0 4px 2px 5px gray;
+    box-shadow: 0 0 15px 0px rgba(0,0,0,0.5);
 }
 
 #home-button-bottom{border-bottom: 3px solid #186AA5;font-weight: bold;}
@@ -180,7 +180,7 @@ header div > * {
 
     #footer{
         display: flex;
-        height: 8%;
+        height: 10xp;
     }
 
     .cards-section{
