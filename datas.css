@@ -1,0 +1,207 @@
+
+::-webkit-input-placeholder {
+    text-align: center;
+ }
+
+html{ height: 100%; width: 100%; margin: 0; }
+
+body{
+    min-height: 100%; width: 100%; margin: 0;
+    overflow:auto;
+}
+
+*{
+    font-family: "Shabnam";
+}
+
+/* header */
+#header {
+    width: 100%;
+    height: 10%;
+    box-shadow: 0 2px 1px 0px gray;
+    background-color: #E8EFF7;
+}
+
+#datas-button-top{border-bottom: 3px solid #186AA5; font-weight: bold;}
+
+#home-button-top, #datas-button-top{
+    margin: 0; 
+    height: 100%; 
+    display: flex;
+    align-items: center;
+}
+
+header div > * {
+    margin: 10px;
+}
+
+#register-button-top{
+    color: white;
+    pad: 8px 16px;
+}
+
+#enter-button-top{
+    border: 1px solid #186AA5;
+    width: 100px;
+}
+
+#logoimg {
+    height: 100px;
+    width: 100px;
+}
+  #next{
+    margin: 0px 0px 0px 0px;
+    float: left;
+  }
+  
+  #previous{
+    margin: 0px 0px 0px 0px;
+    float: right;
+  }
+
+
+#sidenav-button{
+    display: none;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #186AA5;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.sidenav-opened .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+  
+.sidenav-opened .bar2 {opacity: 0;}
+  
+.sidenav-opened .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* main section */
+
+#main{
+    top: 10%;
+    bottom: 0px;
+    left: 0px;
+    right: 300px;
+    position: absolute;
+    overflow: auto;
+    padding: 30px;
+}
+
+
+
+
+.card:hover{
+    box-shadow: 0 0 15px 5px rgba(0,0,0,0.5);
+    transition: 0.5s;
+}
+
+/* sidebar */
+#sidebar{
+    background-color: #186AA5;
+    color: white;
+    padding: 20px;
+    text-align: right;
+    width: 300px;
+    position: fixed;
+    right: 0px;
+    top: 10%;
+    bottom: 0%;
+}
+
+.datas-cards-section{
+	grid-template-columns: 1fr;
+        /* grid-template-rows: repeat(auto-fill, minmax(200px, 0.5fr)); */
+        grid-template-rows: minmax(200px, 0.4fr);
+        grid-auto-rows: minmax(200px, 0.4fr);
+    }
+
+.datas-card-container{
+        height: 100%;
+        width: 100%;
+    }
+#sidebar h5 {
+    text-align: right;
+
+}
+
+.table{
+    text-align: center
+}
+
+#next{
+    margin: 5px 0px 0px 0px;
+    float: left;
+
+  }
+  
+#previous{
+    margin: 5px 0px 0px 0px;
+    float: right;
+}
+
+/* footer */
+#footer{
+    display: none;
+    background-color: #E8EFF7;
+    box-shadow: 0 4px 2px 5px gray;
+}
+
+#home-button-bottom{border-bottom: 3px solid #186AA5;font-weight: bold;}
+
+
+@media screen  and (min-width: 601px) {
+    .cards-section{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .card-container{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #main{
+        bottom: 6%;
+        right: 0px;
+        padding: 15px;
+        /* grid-template-columns: 1fr; */
+    }
+    .table{
+        display: none;
+    }
+    #sidebar{
+        width: 0px;
+        padding: 0px;
+        overflow: hidden; 
+        left: 0px; 
+        z-index: 1;
+        bottom: 5%;
+        transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    }
+
+    #enter-button-top, #datas-button-top, #home-button-top, #register-button-top{
+        display: none;
+    }
+
+    #sidenav-button{display: inline;}
+
+    #footer{
+        display: flex;
+        height: 8%;
+    }
+
+  }
+
+a:hover{
+    background-color: white;
+    transition: 0.4s;
+}
