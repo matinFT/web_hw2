@@ -96,20 +96,22 @@ header div > * {
     overflow: auto;
     padding: 30px;
 }
-.card{
+.cards{
 margin: 10px 10px 10px 10px;
 }
 
-h5{
+.nt-font h6{
 color: #007bff;
 }
-
-.card-body{
-    background-color: #E8EFF7;
-    display: inline;
+.title-font h6{
+color: #186AA5;
+  font-weight: bold;
 
 }
-.card:hover{
+.card-body{
+    background-color: #E8EFF7;
+}
+.cards:hover{
     box-shadow: 0 0 15px 5px rgba(0,0,0,0.5);
     transition: 0.5s;
 }
@@ -127,17 +129,7 @@ color: #007bff;
     bottom: 0%;
 }
 
-.datas-cards-section{
-	grid-template-columns: 1fr;
-        /* grid-template-rows: repeat(auto-fill, minmax(200px, 0.5fr)); */
-        grid-template-rows: minmax(200px, 0.4fr);
-        grid-auto-rows: minmax(200px, 0.4fr);
-    }
 
-.datas-card-container{
-        height: 100%;
-        width: 100%;
-    }
 #sidebar h5 {
     text-align: right;
 
