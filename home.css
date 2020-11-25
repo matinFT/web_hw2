@@ -81,7 +81,7 @@ header div > * {
     top: 10%;
     bottom: 0px;
     left: 0px;
-    right: 300px;
+    right: 20%;
     position: absolute;
     overflow: auto;
     padding: 30px;
@@ -106,6 +106,8 @@ header div > * {
     cursor: pointer;
     background-size: cover;
     overflow: hidden;
+    max-width: 250px;
+    min-width: 400;
 }
 
 .card-image{
@@ -124,7 +126,7 @@ header div > * {
     color: white;
     padding: 20px;
     text-align: right;
-    width: 300px;
+    width: 20%;
     position: fixed;
     right: 0px;
     top: 10%;
